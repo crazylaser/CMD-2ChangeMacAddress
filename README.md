@@ -3,8 +3,6 @@ CMD一键修改MAC地址
 
 <center><b><h1>CMD一键修改mac地址</h1></b> </center>
 
-源文件丢失，制作过程中记了日志，供参考。
-
 
 
 devcon.exe 修改程序
