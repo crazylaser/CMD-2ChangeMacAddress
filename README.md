@@ -60,7 +60,7 @@ echo 友情提示：此操作时间较长，请耐心等待，脚本执行完成
 
 devcon enable *DEV_095B*
 
-netsh wlan connect czbank-kyzx
+netsh wlan connect wifiname0
 
 goto n1
 
@@ -82,7 +82,7 @@ echo 友情提示：此操作时间较长，请耐心等待，脚本执行完成
 
 devcon enable *DEV_095B*
 
-netsh wlan connect czbank-test
+netsh wlan connect wifiname1
 
 goto n1
 
