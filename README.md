@@ -38,13 +38,13 @@ For /f "tokens=3 delims= " %%i in ('Reg Query "HKEY_LOCAL_MACHINE\SYSTEM\Current
 
  
 
-rem 内网
+rem 1网
 
 if %a% equ 4C34887C907F (goto gt1) else (goto gt2)
 
 :gt1
 
-echo 内网转外网
+echo 1网转2网
 
 regedit /s outer.reg
 
@@ -66,7 +66,7 @@ goto n1
 
 :gt2
 
-echo 外网转内网
+echo 2转1网
 
 regedit /s inner.reg
 
@@ -102,7 +102,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}\0014]
 
-"NetworkAddress"="3A43E5A3D627"
+"NetworkAddress"="234"
 ```
 
  
@@ -114,7 +114,7 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}\0014]
 
-"NetworkAddress"="4C34887C907F"
+"NetworkAddress"="123"
 ```
 
  
